@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CDAC | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem;
+        }
+
+        .login-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-section {
+            flex: 1;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .text-area {
+            text-align: center;
+        }
+
+        .register-btn {
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            background: #fff;
+            color: #f76b1c;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .form-section {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .form-section h1 {
+            margin-bottom: 1rem;
+        }
+
+        .user-type {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .user {
+            text-align: center;
+            cursor: pointer;
+            padding: 10px;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .user.selected {
+            border-color: #6a11cb;
+            background-color: #f0f0f0;
+        }
+
+        .input-field {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .input-field i {
+            margin-right: 10px;
+        }
+
+        .input-field input {
+            border: none;
+            outline: none;
+            flex: 1;
+        }
+
+        .login-btn {
+            margin-top: 1rem;
+            padding: 10px 20px;
+            background-color: #6a11cb;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        footer img {
+            width: 120px;
+            margin-bottom: 1rem;
+        }
+
+        #contact div {
+            margin: 5px 0;
+        }
+
+        .copyrights {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-icons a {
+            color: #6a11cb;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="login-section">
+        <div class="login-container">
+            <div class="image-section">
+                <div class="text-area">
+                    <h1>Welcome Back</h1>
+                    <p>If you don’t have an account, please register first</p>
+                    <a href="#"><button class="register-btn">Register</button></a>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h1>Login To CDAC</h1>
+                <div class="user-type">
+                    <div class="user selected" id="login_user1">
+                        <i class="fas fa-user"></i>
+                        <span>Student</span>
+                    </div>
+                    <div class="user" id="login_user2">
+                        <i class="fas fa-building"></i>
+                        <span>Faculty</span>
+                    </div>
+                </div>
+                <form>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required />
+                    </div>
+                    <a href="#"><small>Forgot Password?</small></a><br>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="CDAC LOGO.jpg" alt="CDAC Logo">
+        <div id="contact">
+            <div><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra, India</div>
+            <div><i class="fas fa-envelope"></i> cdac.support@gmail.com</div>
+            <div><i class="fas fa-phone"></i> +91 2010210312465</div>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:cdac.support@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <hr />
+        <div class="copyrights">
+            &copy; 2025 CDAC.LIVE | ALL RIGHTS RESERVED
+        </div>
+    </footer>
+
+</body>
+
+</html>
